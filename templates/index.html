@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Ajax use {% endblock %} 
+{% block left %}
+<button type="button" class="btn btn-success btn-lg">Get</button>
+<ul id="seconds"></ul>
+{% endblock %}
+
+{% block right %}
+{% csrf_token %}
+<ul id="right"></ul>
+{% endblock %}
